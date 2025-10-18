@@ -1,0 +1,101 @@
+/*
+1. Oblicz średnią prędkość pojazdu
+
+Wczytaj od użytkownika dystans(w kilometrach) i czas podróży(w godzinach).
+Oblicz średnią prędkość i wypisz wynik w km / h.
+
+2. Oblicz pole prostokąta i przekątną
+
+Program wczytuje długość i szerokość prostokąta, a następnie oblicza jego pole i długość przekątnej.
+
+3. Przeliczanie sekund na godziny, minuty i sekundy
+
+Wczytaj liczbę sekund i oblicz, ile to godzin, minut i sekund.
+
+4. Oblicz miesięczne zużycie energii
+
+Program wczytuje moc urządzenia(w watach) oraz liczbę godzin pracy dziennie.
+Oblicz koszt miesięcznego zużycia energii, przyjmując cenę 1 kWh od użytkownika.
+
+5. Oblicz należny podatek dochodowy
+
+Wczytaj kwotę dochodu użytkownika i oblicz podatek wg uproszczonego wzoru :
+
+jeśli dochód ≤ 30 000 zł → podatek 12 %,
+
+jeśli dochód > 30 000 zł → podatek 12 % od 30 000 zł + 32 % od nadwyżki.
+
+6. Oblicz ilość farby potrzebnej do pomalowania pokoju
+
+Program wczytuje długość, szerokość i wysokość pokoju(w metrach), oraz informację, ile metrów kwadratowych można pomalować 1 litrem farby.
+Oblicz, ile litrów farby trzeba kupić.
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	//1
+	double h, d;
+	cout << "czas(h)" << endl;
+	cin >> h;
+	cout << "distance (km)" << endl;
+	cin >> d;
+	cout << "predkosc" << d / h << endl;
+	cout << "\n\n";
+
+	//2
+	double a, b;
+	cout << "a" << endl;
+	cin >> a;
+	cout << "b" << endl;
+	cin >> b;
+	cout << "A" << a * b << endl;
+	cout << "D" << sqrt(pow(a, 2) + pow(b, 2))<<endl;
+	cout << "\n\n";
+	
+	//3
+	double s;
+	cout << "s" << endl;
+	cin >> s;
+	cout << s / 3600 << "h" << endl;
+	cout << s / 60 << "m" << endl;
+	cout << "\n\n";
+
+	//4
+	double p, t, m;
+	cout << "Moc (W) " << endl;
+	cin >> p;
+	cout << "Czas pracy " << endl;
+	cin >> t;
+	cout << "cena kWh " << endl;
+	cin >> m;
+	cout << "cena" << endl << (((p * t) / 1000) * 30) * m << " gr" << endl;
+	cout << "\n\n";
+	
+	//5
+	double g, v;
+	v = 0.12;
+	cout << "dochod" << endl;
+	cin >> g;
+	if (g <= 30000)
+	{
+		cout << "podatek " << g * v << endl;
+	} else {
+		cout << "podatek " << (g * v) + ((g - 30000) * 0.32) << endl;
+	}
+	cout << "\n\n";
+
+	//6
+	double l, w, z;
+	cout << "wysokosc(m)" << endl;
+	cin >> z;
+	cout << "szerokosc (m)" << endl;
+	cin >> w;
+	cout << "dlugosc (m)" << endl;
+	cin >> l;
+	cout << "ilosc farby " << ((z * w) * 2) + ((l * z) * 2) << endl;
+	cout << "\n\n";
+}
