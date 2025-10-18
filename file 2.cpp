@@ -1,19 +1,18 @@
-#include<iostream>
-#include<string>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "Long Double: " << sizeof(long double) << endl;
-    cout << "Double: " << sizeof(double) << endl;
-    cout << "Float: " << sizeof(float) << endl;
-    cout << "Long Long: " << sizeof(long long) << endl;
-    cout << "Long: " << sizeof(long) << endl;
-    cout << "Int: " << sizeof(int) << endl;
-    cout << "Short: " << sizeof(short) << endl;
-    cout << "Char: " << sizeof(char) << endl;
-    cout << "Bool: " << sizeof(bool) << endl;
-    cout << "String: " << sizeof(string) << endl;
-    return 0;
+	double n1, n2, n3;
+	
+	cout << "liczba 1"<<endl;
+	cin >> n1;
+	cout << "liczba 2" << endl;
+	cin >> n2;
+	cout <<  "liczba 3" << endl;
+	cin >> n3;
+	cout << (n1 + n2 + n3) / 3;
+	
+	return 0;
 }
