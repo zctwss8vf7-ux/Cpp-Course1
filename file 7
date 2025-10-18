@@ -1,0 +1,89 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (;;)
+	{
+		int n;
+		cout << "liczba calkowita"<<endl;
+		cin >> n;
+		if (n > 0)
+		{
+			cout << "liczba dodatnia"<<endl;
+		}
+		else {}
+
+		if (n % 2 == 0) {
+			cout << "liczba parzysta" << endl;
+		}
+		else {
+			cout << "liczba nieparzysta"<<endl;
+		}
+		if (50 > n > 10) {
+			cout << "liczba w przedziale 10-50"<<endl;
+		}
+		else {
+			cout << "liczba nie w przedziale 10-50" << endl;
+		}
+		if (n = 0)
+		{
+			cout << "liczba =0" << endl;
+		} else {}
+		if (n > 0)
+		{
+			cout << "liczba dodatnia" << endl;
+		} else {}
+		if (n < 0)
+		{
+			cout << "liczba ujemna" << endl;
+		} else {}
+		cout << "\n\n";
+
+		double a, b, c;
+		cout << "poddaj trzy liczby";
+		cin >> a >> b >> c;
+		double s, m, l;
+		if (a <= b && a <= c)
+		{
+			s = a;
+			if (b <= c)
+			{
+				m = a;
+				l = c;
+			}
+			else {
+				m = c;
+				l = a;
+			}
+		}
+		else if (b <= a && b <= c)
+		{
+			s = b;
+			if (a <= c)
+			{
+				m = a;
+				l = c;
+			}
+			else {
+				m = c;
+				l = a;
+			}
+
+		} else if (c<= a && c<=b){
+			s = c;
+			if (a <= c)
+			{
+				m = a;
+				l = c;
+			}
+			else {
+				m = c;
+				l = a;
+			}
+		}
+		cout << s << "," << m << "," << l;
+		cout << "\n\n";
+	} 
+}
