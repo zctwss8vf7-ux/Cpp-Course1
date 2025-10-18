@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (;;)
+	{
+		double r;
+
+
+		cout << "r" << endl;
+		cin >> r;
+
+		cout << "A = " << 3.14159265359 * (r * r) << endl;
+
+		cout << "C = " << 2 * 3.14159265359 * r << endl; \
+			cout << "\n\n";
+	}
+		return 0;
+
+}
