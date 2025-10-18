@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (;;)
+	{
+		double p, d, c;
+
+		p = 5.87;
+		cout << "spalanie (/100)" <<endl;
+		cin >> c;
+		cout << "distance" <<endl;
+		cin >> d; 
+		cout << "koszt = " << p * (c / 100) * d <<endl;
+		cout << "\n\n";
+	}
+	return 0;
+}
