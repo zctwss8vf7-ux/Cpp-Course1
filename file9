@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (;;)
+	{
+		int a;
+		cout << "Podaj liczbe";
+		cin >> a;
+		cout << "\n\n";
+
+		if (a == 0)
+		{
+			cout << "Liczba rowna zero" << endl;
+		}
+		else if (a < 0)
+		{
+			cout << "Liczba ujemna" << endl;
+		}
+		else
+		{
+			cout << "Liczba dodatnia" << endl;
+		}
+		cout << "\n\n";
+		cout << "\n\n";
+		cout << "\n\n";
+		cout << "\n\n";
+	}
+}
