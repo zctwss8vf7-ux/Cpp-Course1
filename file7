@@ -7,7 +7,7 @@ int main()
 	int b;
 	cout << "Podaj wynik z testu" << endl;
 	cin >> b;
-	if (b >= 90)
+	if (b >= 90 && b <= 100)
 	{
 		cout << "Ocena celujaca" << endl;
 	}
@@ -22,5 +22,9 @@ int main()
 	else if (b < 50)
 	{
 		cout << "Ocena niedostateczna" << endl;
+	}
+	else if (b < 100)
+	{
+	cout << "Wynik nie Poprawny" << endl;
 	}
 }
