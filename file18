@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+void powitanie()
+{
+	cout << "Witaj";
+	cout << "\n\n";
+
+}
+
+void dodawanie()
+{
+	int a, b;
+	cout << "Podaj a"<<endl;
+	cin >> a;
+	cout << "podaj b"<<endl;
+	cin >> b;
+	cout << "\n\n";
+	int wynik;
+	
+	wynik = a + b;
+	cout <<"= "<< wynik;
+	cout << "\n\n";
+	cout << "\n\n";
+	cout << "\n\n";
+}
+
+void squr()
+{
+	double x, y;
+	cout << "Podaj liczbe"<<endl;
+	cin >> x;
+	y = pow(x, 2);
+	cout << "= "<< y;
+	cout << "\n\n";
+}
+
+void factoraial()
+{
+	int f, m;
+	long long z = 1;
+	cout << "podaj liczbe " << endl;
+	cin >> f;
+	for (int n = 1; n <= f; n++) 
+	{
+		m = n * z;
+	}
+	cout << "silnia:" << f << " wynosi:" << m << endl;
+}
+
+int main()
+{
+	powitanie();
+	dodawanie();
+	squr();
+	factoraial();
+}
