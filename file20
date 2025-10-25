@@ -1,0 +1,161 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+void ad()
+{
+	int a, b;
+	cout << "podaj a"<<endl;
+	cin >> a;
+	cout << "podaj b"<<endl;
+	cin >> b;
+	cout << "= " << a + b;
+	cout << "\n\n";
+}
+
+void ac()
+{
+	int c, d;
+	cout << "podaj a" << endl;
+	cin >> c;
+	cout << "podaj b" << endl;
+	cin >> d;
+	cout << "= " << c * d;
+	cout << "\n\n";
+}
+
+void af()
+{
+	int e, f;
+	cout << "podaj a" << endl;
+	cin >> e;
+	cout << "podaj b" << endl;
+	cin >> f;
+	cout << "= " << (e + f) / 2;
+	cout << "\n\n";
+}
+
+bool parzysta(int g)
+{
+	if (g % 2 == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void ha()
+{
+	int h, d;
+	cout << "podaj liczbe";
+	cin >> h;
+	if (h >= 0)
+	{
+		cout << h;
+	}
+	else 
+	{
+		d = h * -1;
+		cout << d;
+	}
+	cout << "\n\n";
+}
+
+void ir()
+{
+	int i, r;
+	cout << "podaj a" << endl;
+	cin >> i;
+	cout << "podaj b" << endl;
+	cin >> r;
+	cout << "pole = " << i * i;
+	cout << "\n\n";
+}
+
+void jo()
+{
+	int j;
+	cout << "podaj r"<<endl;
+	cin >> j;
+	cout << 3.14159265359 * pow(j, 2);
+	cout << "\n\n";
+}
+
+void ke()
+{
+	int k;
+	cout << "podaj bok"<<endl;
+	cin >> k;
+	cout << "obwod = " << k * 4;
+	cout << "\n\n";
+}
+
+void mi()
+{
+	int l, m;
+	cout << "Podaj liczbe 1" << endl;
+	cin >> l;
+	cout << "Podaj liczbe2" << endl;
+	cin >> m;
+	if (l = m)
+	{
+		cout << "liczby sa rowne";
+	}
+	else if (l > m)
+	{
+		cout << m;
+	}
+	else
+	{
+		cout << l;
+	}
+	cout << "\n\n";
+}
+
+void ma()
+{
+	int n, o;
+	cout << "Podaj liczbe 1" << endl;
+	cin >> n;
+	cout << "Podaj liczbe2" << endl;
+	cin >> o;
+	if (n = o)
+	{
+		cout << "liczby sa rowne ";
+	}
+	else if (n > o)
+	{
+		cout << n;
+	}
+	else
+	{
+		cout << o;
+	}
+	cout << "\n\n";
+}
+
+
+
+int main()
+{
+	ad();
+	ac();
+	af();
+	int g;
+	cout << "podaj liczbe" << endl;
+	cin >> g;
+	cout << parzysta(g);
+	cout << "\n\n";
+	ha();
+	ir();
+	jo();
+	ke();
+	mi();
+	ma();
+	return 0;
+
+}
